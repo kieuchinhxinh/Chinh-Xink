@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <style>
+    .title{
+    text-align: center;
+    height: 120px;
+    color: red;
+    animation-name: example;
+    animation-duration: 20s;
+    font-size: 35px;
+
+    }
+  @keyframes example {
+    0%   {color:rgb(0, 0, 0); }
+    10%  {color:rgb(93, 12, 104) }
+    25%  {color: yellow }
+    40%  {color:rgb(251, 255, 0);}
+    50%  {color:rgb(0, 0, 0) }
+}
+   .header-nav{
+       font-size: 1.25em;
+       background-color:white;
+       font-family:	'Copperplate', fantasy;
+       color: rgb(156, 0, 187);
+       display:block;
+       padding: 0 9px;
+       text-decoration: none;
+       text-align: center;
+       overflow: hidden;
+       margin: auto;
+       letter-spacing: 5px;
+         }
+   .header-nav a{
+      font-size: 1.25em;
+       background-color:white;
+       color: rgb(156, 0, 187);
+       padding: 20px 16px 8px 8px;
+       text-align: center;
+       text-decoration: none;
+       margin: auto;
+       font-weight: bold;
+   }
+   .header-nav a:hover{
+      background-color: rgb(156, 0, 187);
+       color:white ;
+       padding: 20px 16px 8px 8px;
+
+   }
+   form{
+    text-align: center;
+    height: 89px;
+   }
+   form .chinh{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: rgb(156, 0, 187);
+        background-color: #fefbff;
+        border: none;
+        border-radius: 13px;
+        box-shadow: 0 8px #999;
+
+      }
+      .chinh:hover {background-color: #b60ef8}
+      .chinh:active {
+        background-color: #b60ef8;
+        box-shadow: 0 3px #666;
+        transform: translateY(3px);
+      }  
+  nav {
+    float: left;
+    width: 25%;
+    height: 350px;
+    background-color: white ;
+    text-align: center;
+    margin-left: 40px;
+    padding: 20px;
+
+  }
+ .container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  .container .kieuchinh {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: rgb(132, 14, 179);
+    font-size: 1.23em;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .container .kieuchinh:hover {
+    background-color:white;
+    color: deeppink;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer {
+    background-color:whitesmoke;
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+    }}
+
+    table {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-collapse: collapse;
+        width: 50%;
+        margin-right: 60px;
+        height:auto ;
+        padding: 20px;
+        margin-bottom: auto;
+ 
+      }
+      
+      tr, td {
+        border: 1px solid #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+      tr, td {
+        border: 1px solid #ffffff;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #fcf2ff;
+      }
+     form .as {
+        border-radius: 25px;
+        border: 1px solid rgb(156, 0, 187);
+        padding: 20px; 
+        width: 200px;
+        height: 6px;  
+    }
+    h2{
+      font-size: 1em;
+      text-align: center;
+    }
+     footer{
+  border: 20px;
+  margin-top: 100px;
+}
+     footer .chigtey{
+  margin-right: 80%;
+  height: 200px;
+  margin-bottom: -130px;
+}
+     footer .ckb{
+  margin-left: 76%;
+  height: 200px;
+  margin-top: -280px;
+}
+body{
+  background-color: white;
+}
+    </style>
+</head>
+<header>
+    <div class="header-nav">
+        <a href="/">SALE</a>
+        <a href="/">OFFERS</a>
+        <a href="/">NEW+ </a>
+        <a href="/">COLLECTIONS</a>
+        <a href="/">BRAND</a>
+        <a href="/">CHARACTERS</a>
+        <a href="/">SUMMER</a>
+    </div>
+</header>
+
+<body>
+
+    <div class="title">
+        <h1>Toys Store</h1>
+    </div>
+    <form action="/search" method="post">
+        <input class="as" type="text" name="txtName" placeholder="Name"> <input class="chinh" type="submit" value="Search">
+    </form>
+    <section>
+        <nav class="container" style="float: left;">
+            <img src="https://www.newswire.com/blog/wp-content/uploads/2018/03/newproduct-750x420.png" alt="Snow"
+                style="width:90%">
+            <a href="/insert">
+                <input class="kieuchinh" type="submit" id="btn" value="New Product">
+            </a>
+        </nav>
+        <article>
+            <table width="50%" border="1" style="float:right;">
+                <tr>
+                    <td>Number</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Delete</td>
+                    <td>Update</td>
+                </tr>
+                {{# each model}}
+                <tr>
+                    <td>{{number}}</td>
+                    <td>{{name}}</td>
+                    <td>{{price}}</td>
+                    <td><a href="/delete?id={{_id}}">Delete</a></td>
+                    <td><a href="/edit?id={{_id}}">Edit</a></td>
+                </tr>
+                {{/each}}
+            </table>
+        </article>
+    </section>
+
+    <footer>
+     <img class="chigtey" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5M9Vmo05d8QxiNzG8pqK-ASZEhTU55Nh4gw&usqp=CAU">   
+<h2>
+    <a href="https://www.facebook.com/kieuching.xinh/"><i class="fa fa-facebook-square" aria-hidden="true" style="color:black;" > Chinh Kieu Bui</i></a>
+ </h2>
+ <h2>
+   <i class="fa fa-instagram" aria-hidden="true" style="color:black;"> kieuching.xink </i></a>
+ </h2>
+ <h2>
+     <i class="fa fa-phone" aria-hidden="true" style="color:black);"> 012345679 </i>
+ </h2>
+ <img class="ckb" src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/mary-lees-toy-store-geno-peoples.jpg">
+    </footer>
+
+</body>
+
+</html>

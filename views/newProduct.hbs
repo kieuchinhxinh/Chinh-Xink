@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <style>
+    .content .title {
+    margin: 90px 0 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold;
+    color: #6c019e;
+}
+
+body {
+    font-family: 'Lucida Handwriting ', cursive;
+    color: #6c019e;
+    background-color: white;
+}
+.content {
+    width: 700px;
+    min-height: 450px;
+    margin: 100px auto 45px;
+    padding-bottom: 100px;
+    border: 1px solid #e7e4e9;
+    border-radius: 10px;
+    background-color: #e7e4e9;
+}
+.content .updateForm {
+    width: 360px;
+    margin: 0 auto;
+    color: #6c019e;
+}
+div {
+    display: block;
+}
+
+.content .as {
+    display: block;
+    width: 320px;
+    padding: 12px 4px;
+    border: 4px ;
+    border-radius: 2px;
+    margin: auto;
+    line-height: 14px;
+    font-size: 12px;
+}
+.btn {
+    display: block;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.25em;
+    margin: auto;
+    background-color: #6c019e;
+    cursor: pointer;
+}
+.content .btnLine .btn {
+    width: 30%;
+    border-radius: 10px;
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    background-color:rgb(230, 208, 240);
+}
+    </style>
+</head>
+<body>
+    <div class="content" style="top: 39.2px; background-color: #e7e4e9"> 
+    <h1 class="title">New product</h1>
+    
+    <form action="/doInsert" method="post" class="updateForm">
+    <div class="as">
+    <input type="hidden" name="txtId" value="{{product._id}}">
+     <br>
+    <input type="text" name="txtNumber" value="{{product.number}}" placeholder="Number" class="as"/>	
+    <br>
+    <input type="text" name="txtName" value="{{product.name}}" class="as" placeholder="Name"/>
+    <br>
+        <input type="text" name="txtPrice" value="{{product.price}}" class="as" placeholder="Price"/>
+    <br>
+    </div>
+        <br>
+    <div class="btnLine">
+        <input type="submit"  value="Insert" class="btn">
+    </div>
+    </form>
+    </div>
+</body>
+</html>
+
+
